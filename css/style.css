@@ -1,0 +1,339 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+@media (min-width: 768px){
+.body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 2rem;
+}
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    text-align: center;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+.centrar_texto{
+    text-align: center;
+}
+table.tabla-horizontal {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+button:hover {
+    background: #0056b3;
+}
+.resultado {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.normal { background: green; color: white; }
+.elevada { background: yellow; color: black; }
+.hipertension1 { background: orange; color: white; }
+.hipertension2 { background: red; color: white; }
+.crisis { background: darkred; color: white; }
+
+@media (min-width: 768px){
+.contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 2rem;
+
+    .img_logo{
+    width: 38rem;  /*ancho*/
+    height: 50rem; /*alto*/
+    margin-top: 1rem;
+    
+
+    }
+
+}
+}
+
+@media (min-width: 768px){
+.causas{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+    }
+    .img_causa{
+        width: 30rem;
+        height:25rem;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.seccion5{
+    container-name: seccion5;
+    container-type: inline-size;
+}
+
+.seccion5_container{
+    flex-direction: column;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+    margin-bottom: 25px;
+
+    
+}
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-top: 82px;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.barra3{
+    position: relative;
+    top: 0;
+    color: white;
+    height: 35px; 
+    line-height: 1px; 
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: -70px;
+    
+}
+
+.stm{
+    text-align: center;
+    margin-top: -27px;
+}
+
+.stm1{
+    margin-bottom: 55px;
+}
+
+@container seccion5 (min-width:720px){
+    .seccion5_container{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 15px;
+        width: 400px;
+        text-align: center;
+        transition: transform 0.3s;
+        margin-top: -70px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: -150px;
+        
+    }
+    
+    h2{
+        text-align: center;
+        
+    }
+}
+.boton-enlace {
+    display: inline-block;
+    padding: 10px;
+    background-color:#4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*resgistro*/
+.container {
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contenedor-registro input[type="text"],
+.contenedor-registro input[type="email"],
+.contenedor-registro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #111211;
+    color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+
+.footer-container{
+    text-align: center;
+}
+
+
